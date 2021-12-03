@@ -1,5 +1,8 @@
-<div class="container grid py-32 md:grid-cols-3">
-  <ng-container *ngFor="let car of cars">
-    <lbk-car-card class="block" [car]="car"></lbk-car-card>
-  </ng-container>
+<div class="flex justify-center items-center md:h-screen">
+
+  <div class="rounded-lg overflow-hidden flex flex-col md:flex-row">
+    <ng-container *ngFor="let car of cars">
+      <lbk-car-card class="block" [car]="car"></lbk-car-card>
+    </ng-container>
+  </div>
 </div>
